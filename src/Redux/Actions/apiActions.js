@@ -7,7 +7,7 @@ const options = {
     params: { language_code: 'en' },
     headers: {
         'X-RapidAPI-Host': 'quotes15.p.rapidapi.com',
-        'X-RapidAPI-Key': 'db83666c77msh8ecec0133f7340fp13c5afjsn8acd31e791d9'
+        'X-RapidAPI-Key': process.env.VITE_SOME_KEY,
     }
 };
 
@@ -16,6 +16,8 @@ axios.request(options).then(function (response) {
 }).catch(function (error) {
     console.error(error);
 });
+
+console.log(process.env.VITE_SOME_KEY)
 
 export const getQuote = () => async (dispatch) => {
     const res = await axios.get('https://quotes15.p.rapidapi.com/quotes/random/');
