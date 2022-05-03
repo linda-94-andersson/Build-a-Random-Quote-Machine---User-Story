@@ -23,5 +23,5 @@ dist-ssr
 *.sln
 *.sw?
 
-# Hide API
-*.env
+# API KEY
+config.js
