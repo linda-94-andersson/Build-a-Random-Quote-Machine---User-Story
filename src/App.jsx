@@ -6,7 +6,6 @@ import { getQuote } from "./Redux/Actions/apiActions";
 
 function App() {
   let quote = useSelector((state) => state.getQuote.quote);
-  console.log(quote + " data should go here");
   const { id, content, originator } = quote;
   const dispatch = useDispatch();
 
@@ -29,11 +28,12 @@ function App() {
             <span id="author"> - {originator.name}</span>
             <section>
               <a
-                id="tweet-qutoe"
-                href="twitter.com/intent/tweet"
+                id="tweet-quote"
+                class="twitter-share-button"
+                href={`https://twitter.com/intent/tweet?text=${content} -${originator.name}`}
                 target="_blank"
               >
-                <FiTwitter>Twitter icon</FiTwitter>
+                <FiTwitter>Tweet</FiTwitter>
               </a>
               <Button
                 id="new-quote"
@@ -43,6 +43,12 @@ function App() {
                 New quote
               </Button>
             </section>
+            <span>
+              Powerd by:{" "}
+              <a href="https://quotepark.com/" target="_blank">
+                https://quotepark.com/
+              </a>
+            </span>
           </div>
         </Container>
       )}

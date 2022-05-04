@@ -16,5 +16,3 @@ export const getQuote = () => async (dispatch) => {
     });
     console.log(res.data, " res getQuote");
 }
-
-console.log(mykey + " key")
