@@ -1,13 +1,11 @@
 import axios from "axios";
 import { ActionType } from "../constans/action-type";
 
-var mykey = config.VITE_SOME_KEY;
-
 export const getQuote = () => async (dispatch) => {
-    const res = await axios.get('https://quotes15.p.rapidapi.com/quotes/random/?language_code=en', {
+    const res = await axios.get(import.meta.env.VITE_API_URL, {
         headers: {
-            'X-RapidAPI-Host': 'quotes15.p.rapidapi.com',
-            'X-RapidAPI-Key': mykey,
+            'X-RapidAPI-Host': import.meta.env.VITE_API_HOST,
+            'X-RapidAPI-Key': import.meta.env.VITE_API_KEY,
         }
     });
     dispatch({
