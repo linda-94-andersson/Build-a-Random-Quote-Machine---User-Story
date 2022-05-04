@@ -22,14 +22,14 @@ function App() {
       {Object.keys(quote).length === 0 ? (
         <div>...Loading</div>
       ) : (
-        <Container key={id} style={{maxWidth:1000}}>
+        <Container key={id} style={{ maxWidth: 1000 }}>
           <div id="quote-box">
             <h1 id="text">"{content}"</h1>
             <span id="author"> - {originator.name}</span>
             <section>
               <a
                 id="tweet-quote"
-                class="twitter-share-button"
+                className="twitter-share-button"
                 href={`https://twitter.com/intent/tweet?text=${content} -${originator.name}`}
                 target="_blank"
               >
