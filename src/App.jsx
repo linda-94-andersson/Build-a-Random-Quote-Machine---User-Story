@@ -14,6 +14,10 @@ function App() {
     dispatch(getQuote());
   }, []);
 
+  const handleNewQuote = () => {
+    dispatch(getQuote());
+  };
+
   return (
     <>
       {Object.keys(quote).length === 0 ? (
@@ -31,7 +35,11 @@ function App() {
               >
                 <FiTwitter>Twitter icon</FiTwitter>
               </a>
-              <Button id="new-quote" variant="dark">
+              <Button
+                id="new-quote"
+                variant="dark"
+                onClick={() => handleNewQuote()}
+              >
                 New quote
               </Button>
             </section>
