@@ -1,5 +1,22 @@
-# Build a Random Quote Machine
+## Deployment
 * https://linda-andersson-random-quote-machine.netlify.app/ 
+
+## Skills used for this project
+* HTML
+* SASS/SCSS
+* JavaScript
+* React
+* Redux
+* Bootstrap
+* env.
+* Axios
+* API
+* Vite
+* Netlify
+
+## Requirements
+
+# Build a Random Quote Machine
 
 ## Objective: Build a CodePen.io app that is functionally similar to this: https://codepen.io/freeCodeCamp/full/qRZeGZ.
 
@@ -27,4 +44,4 @@ You can use any mix of HTML, JavaScript, CSS, Bootstrap, SASS, React, Redux, and
 
 * User Story #11: The #quote-box wrapper element should be horizontally centered. Please run tests with browser's zoom level at 100% and page maximized.
 
-## Note: Twitter does not allow links to be loaded in an iframe. Try using the target="_blank" or target="_top" attribute on the #tweet-quote element if your tweet won't load. target="_top" will replace the current tab so make sure your work is saved.
+* Note: Twitter does not allow links to be loaded in an iframe. Try using the target="_blank" or target="_top" attribute on the #tweet-quote element if your tweet won't load. target="_top" will replace the current tab so make sure your work is saved.
